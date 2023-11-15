@@ -18,7 +18,7 @@ class Logger(commands.Cog):
     async def log_add(self, ctx: commands.Context, channel: discord.TextChannel):
         if check_if_log_channel_exists(ctx.guild.id):
             await ctx.send(
-                "Logger already set up in this server, use `?logger update` to update the channel."
+                "Logger already set up in this server, use `p.logger update` to update the channel."
             )
             return
         set_log_channel(ctx.guild.id, channel.id)
@@ -28,7 +28,7 @@ class Logger(commands.Cog):
     async def log_update(self, ctx: commands.Context, channel: discord.TextChannel):
         if not check_if_log_channel_exists(ctx.guild.id):
             await ctx.send(
-                "Logger not set up in this server, use `?logger add` to add the logger."
+                "Logger not set up in this server, use `p.logger add` to add the logger."
             )
             return
         update_log_channel(ctx.guild.id, channel.id)
@@ -38,7 +38,7 @@ class Logger(commands.Cog):
     async def log_remove(self, ctx: commands.Context):
         if not check_if_log_channel_exists(ctx.guild.id):
             await ctx.send(
-                "Logger not set up in this server, use `?logger add` to add the logger."
+                "Logger not set up in this server, use `p.logger add` to add the logger."
             )
             return
         db().table("logger").delete().eq("guild_id", ctx.guild.id).execute()
