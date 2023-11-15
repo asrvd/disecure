@@ -1,3 +1,6 @@
 .env
 .vscode
 pangea_sdk_logs.json
+
+# pycache
+__pycache__/
