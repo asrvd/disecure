@@ -7,7 +7,7 @@ load_dotenv()
 
 description = """A simple Discord bot that keeps your server safe and secure using Pangea's API.
 
-This bot is open source and the code can be found here: https://github.com/asrvd/disguard"""
+This bot is open source and the code can be found here: https://github.com/asrvd/disecure"""
 
 intents = discord.Intents.default()
 intents.members = True
