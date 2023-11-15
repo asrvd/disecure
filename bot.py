@@ -5,17 +5,15 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-description = """An example bot to showcase the discord.ext.commands extension
-module.
+description = """A simple Discord bot that keeps your server safe and secure using Pangea's API.
 
-There are a number of utility commands being showcased here."""
+This bot is open source and the code can be found here: https://github.com/asrvd/disguard"""
 
 intents = discord.Intents.default()
 intents.members = True
 intents.message_content = True
 
-bot = commands.Bot(command_prefix="?", description=description, intents=intents)
-
+bot = commands.Bot(command_prefix="p.", description=description, intents=intents)
 
 async def load_cogs():
     for filename in os.listdir("./cogs"):

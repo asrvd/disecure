@@ -62,6 +62,29 @@ pip install -r requirements.txt
 python bot.py
 ```
 
+## Adding the bot to your server
+1. Head over to the [Discord Developer Portal](https://discord.com/developers/applications) and select your application that you created earlier. Then, go to the **OAuth2** tab -> **URL Generator** and select the `bot` scope.
+![oauth2](./media/discord-dev-1.png)
+
+2. Scroll down and select the following permissions for the bot.
+![permissions](./media/discord-dev-2.png)
+
+3. Copy the generated URL and paste it in your browser. Select the server you want to add the bot to and click on **Authorize**.
+
+## Adding a log channel
+1. Create a new channel in your server and copy the channel ID. You can name it anything like `disguard-logs`.
+
+2. Run the following command in your server to set the log channel.
+```
+p.logger add <channel_id>
+```
+
+3. To remove or update the log channel, run the following commands.
+```
+p.logger remove
+p.logger update <channel_id>
+```
+
 ## Resources
 - [Pangea API Documentation](https://pangea.cloud/docs)
 - [Discord.py Documentation](https://discordpy.readthedocs.io/en/stable/)
