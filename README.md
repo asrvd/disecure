@@ -1,7 +1,7 @@
 ## Disguard
 A simple Discord bot that keeps your server safe and secure. Built using [Pangea](https://pangea.cloud) & [Discord.py](https://github.com/Rapptz/discord.py) for the [Hashnode x Pangea Hackathon](https://hashnode.com/hackathons/pangea) by [Hashnode](https://hashnode.com).
 
-<video src="./media/demo.mp4" controls title="Title"></video>
+https://github.com/asrvd/disguard/assets/68690233/ef16cc11-52ce-40e2-b39d-aca4ebbe879f
 
 ## Stack
 - [Pangea](https://pangea.cloud)
